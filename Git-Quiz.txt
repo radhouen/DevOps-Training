@@ -1,0 +1,195 @@
+1- What is the default text editor for the Bash shell with a Windows-based Git install?
+
+	a- Emacs
+	b- Vim
+	c- Notepad++
+	d- Bash
+
+
+2- Before you install Git, which of the following prerequisite products must be present and configured on your local OS?
+
+	a- Jakarta Enterprise Edition web profile compliant server
+	b- Java Development Kit 1.8 or newer
+	c- Apache Maven
+	d- Nothing
+
+
+3- After you install Git and prior to issuing the first commit, which two configuration properties does the tool expect to be configured?
+
+	a- username and email address
+	b- username and password
+	c- email address and password
+	d- username and IP address
+
+
+4- Which of the following is not a Git configuration scope?
+
+	a- Local
+	b- User
+	c- System
+	d- Global
+
+
+5- Who is attributed with inventing Git?
+
+	a- Junio C. Hamano
+	b- James Gosling
+	c- Kohsuke Kawaguchi
+	d- Linus Torvalds
+
+
+7- After you initialize a new Git repository and create a file named git-quiz.html, which of the following commands will not work if issued?
+
+	a- git add git-quiz.html
+	b- git status
+	c- git add .
+	d- git commit -m "git quiz web file added"
+
+
+8- Which vendor acquired GitHub for $7.5 billion in June 2018?
+
+	a- Oracle
+	b- Microsoft
+	c- IBM
+	d- Google
+
+
+9- Which command should you use to initialize a new Git repository?
+
+	a- git bash
+	b- git install
+	c- git init
+	d- git start
+
+
+10- Which file can you configure to ensure that certain file types are never committed to the local Git repository?
+
+	a- ignore.git
+	b- .gitignore
+	c- gitignore.txt
+	d- git.ignore
+
+
+11- What's the git command that downloads your repository from GitHub to your computer?
+
+	a- git push
+	b- git fork
+	c- git clone
+	d- git commit
+
+
+12- How do you create a copy of a lab under your own GitHub account so that you can solve the lab?
+
+	a- Forking it via the GitHub interface.
+	b- git fork
+	c- git clone
+	d- git pull-request
+
+
+13- What's the opposite of git clone, instead of downloading your code from GitHub, uploads your changes and code back to GitHub?
+
+	a- git push
+	b- git add
+	c- git upload
+	d- git status
+
+
+14- How do you check the state of your local git repository since your last commit?
+
+	a- git check
+	b- git status
+	c- git commit
+	d- git diff
+
+
+15- How do you stage files for a commit?
+
+	a- git stage
+	b- git commit
+	c- git add
+	d- git reset
+
+
+16- How do you save the current state of your code into the git version control?
+
+	a- By committing the staged changes with git commit
+	b- By adding all changes and staging them with git stage
+	c- By adding all changes and staging them with git add
+	d- By creating a new commit with git init
+
+
+
+17- What's a shortcut to staging all the changes you have?
+
+	a- git commit add .
+	b- git commit .
+	c- git add .
+	d- git push -am "Message"
+
+
+
+18- How do you supply a commit message to a commit?
+
+	a- git message "I'm coding"
+	b- git add "I'm coding"
+	c- git commit "I'm coding"
+	d- git commit -m "I'm coding"
+
+
+
+19- What is the correct commit syntax for all changes with a message?
+
+	a- git message -am "I'm coding"
+	b- git add -a "I'm coding"
+	c- git commit -a "I'm coding"
+	d- git commit -am "I'm coding"
+
+
+
+20- How do you submit a solution to Learn? (select all that apply)
+
+	a- git submit
+	b- git pull-request
+	c- By creating a Pull Request through the GitHub interface
+	d- learn submit
+	e- git commit -am "Done with Lab"
+
+
+21- What comes first, staging with git add . or committing with git commit?
+
+	a- Staging your commits with git add
+	b- Committing with git commit
+
+
+22- To set your email address at the global--or user--level, what command would you type?
+	
+	a- git set --user email <email>
+	b- git config --global user.email <email>
+	c- git config email <email>
+	d- git set --user user.email>email
+
+
+23- Which command will add a remote branch to the repository?
+	
+	a- git remote add <name> <url>
+	b- git branch --remote <name> <url>
+	c- git remote new <name <url>
+	d- git branch <name> <url>
+
+24- Assuming your repo has a remote called production, what command would send all local committed changes on the master branch to that remote?
+	
+	a- git send master production
+	b- git send production master
+	c- git push master production
+	d- git push production master
+
+25-Write the command that would remove the latest stash from the stash list and apply it to the staging area.
+   git stash pop
+
+26-What command would create the c alias for the commit command (at the global, or user, level)?
+	
+	a- git config --global alias.c commit
+	b- git config --global alias.commit c
+	c- git config alias.c commit
+	d- git config alias.commit c
+	
