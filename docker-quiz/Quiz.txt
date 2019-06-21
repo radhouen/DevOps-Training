@@ -1,0 +1,169 @@
+1- Applications inside the containers accept configuration parameters in the form of environment variables. These variables can tell the app to listen on a specific port but you can't use a specific password.*
+
+    A- True
+    B- False
+
+2- You can't create multiple containers from the same image*
+
+    A- True
+    - False
+
+3- A Docker container is an instance of an image with a specific configuration.*
+
+    A- False
+    B- True
+
+4- Why do you need to write a Dockerfile?*
+
+    A- You want to access and use Docker Hub
+    B- You want to publish your application to Docker Hub
+    C- Because you'd like your application to remain in a private space
+
+5- Volume mapping maps the host server's directory into the Docker container. The data will remain in a safe and accessible place if you do which of the following?*
+
+    A- re-create the container
+    B- delete the container
+    C- break the container
+    D- migrate the container
+    E- backup the container
+
+6- Which is not true about Docker Hub?*
+
+    A-The Hub is a network service
+    B- It gives access to Docker images
+    C- Docker Hub is a network storage
+    D- It's a totally private repository
+
+7- A Docker image provides a template for a container with all the necessary files of an application, but has no instructions to run it.*
+
+    A- True
+    B- False
+
+8- Docker containers and images are included in Plesk Backup and migrated by Plesk Migrator.*
+
+    True
+    False
+
+9- If the Plesk server can't run Docker locally, you can still connect to a remote Docker server to manage containers. You'll need:*
+
+    A- One separate ready-to-code environment
+    B- A Windows Server
+    C- The Plesk Docker extension
+    D- A virtuozzo 6 container
+
+10- Choose the system requirements you need to run Docker on a Plesk Onyx Server:*
+
+    A- 20GB of free disk space
+    B- A compatible Linux OS
+    C- At least 2GB of RAM
+    D- One physical server
+    E- A 64-bit CPU
+
+11- Why wouldn't you see Docker in Plesk installer's list of components?*
+
+    A- The server does not satisfy Docker system requirements
+    B- Your Plesk license doesn't have a Docker add-on
+    C- Docker is available as an extension and you can only install it from the extensions catalog
+
+12- How can you make sure your Docker containers and their data are safely backed up?*
+
+    A- Set up volume mapping on all containers to store their data in a single location on the server (example, /data/) and backup this location.
+    B- Schedule regular Plesk backups. Docker containers are included in Plesk backups.
+    C- Backup the /var/lib/docker/ directory manually
+    D- Nothing. Data stored in Docker containers is backed up to Docker Hub.
+
+13- Which of these flowing is not a docker instruction:
+
+	A- RUN
+	B- APT-GET
+	C- USER
+
+14- RUN <command>  is run in a shell, which by default is /bin/sh -c on Linux :
+
+	A- True
+	B- False
+
+15- Write the command to :
+
+	A- Stop all containers :
+	B- Remove all containers:
+	C- Remove all Docker images:
+
+16- What is the difference between the COPY and ADD commands in a Dockerfile?
+
+17- What is Docker container?
+
+18-  Is there a way to identify the status of a Docker container?
+
+19- What is the difference between Docker Image and Layer?
+
+20- Can you run Docker containers natively on Windows?
+
+	A- True
+	B- False
+
+21- How does Docker run containers in non-Linux systems?
+
+22- Can you explain dockerfile ONBUILD instruction?
+
+23- Give some best practices to create a docker container ?
+
+24- What is the name of the container runtime used by Docker? (hint: it is from Open Container Initiative)
+
+25- What happens when you execute this on the commandline?  docker run debian /bin/sh
+
+	A. A prompt from the shell of created container will be thrown to you
+	B. A container is created and then exited immediately
+	C. A container is created and executes in the detached mode; you can attach to it later using the container id
+	D. Docker CLI issues the error: Error response from daemon: No command specified.
+
+26-What happens when you execute this on the commandline with -p option?
+	$ docker run -p 80-87:80 --name nginx3 -d nginx
+
+	A. The port 80 in the container is mapped to ports 80 and 87 in the host machine
+	B. The port 80 in the hostmachine is mapped to ports 80 and 87 in the container
+	C. The port 80 in the container is mapped to a port in the range 80 to 87 in the host machine
+	D. Docker CLI will issue the error: “Invalid syntax: Using hyphen is not allowed with -P command”
+
+27- Which command do you use “to find layers and their sizes” in an image using Docker CLI?
+
+	A. Use “docker images -layers <<imageid>>” command
+	B. Use “docker layers <<imageid>> command
+	C. Use “docker history <<imageid>> command
+	D. There is no way you can find layers and their sizes using Docker CLI - you need to use external tools
+
+28- Which command do you use “recreate the Dockerfile that was used to build that image” from a given image id/tag using Docker CLI?
+
+	A. Use “docker images -dockerfile <<imageid>>” command
+	B. Use “docker build -reverse <<imageid>> command
+	C. Use “docker history --no-trunc --out:<filename> <<imageid>> command
+	D. There is no way to recreate the Dockerfile that was used to build that image from a given image id/tag using Docker CLI
+
+
+29- You are creating a new container with this command:
+
+docker run -d --name myubuntu ubuntu /bin/sh -c "while true; do echo current date and time is: $(date); sleep 10; done”
+
+Which network is the “myubuntu” container attached to?
+
+	A. Bridge network
+	B. Overlay network
+	C. Custom network
+	D. Host network
+	E. None (not connected to any network)
+
+30- Which one of the following is a recommended Docker BEST PRACTICE?
+
+	A. Prefer using docker commit or docker import instead of using docker build using Dockerfiles (for creating custom/new images)
+	B. Use --link for linking containers explicitly on the same host instead of using default bridge network for inter container communication (ICC)
+	C. Put ADD commands later in the Dockerfile because the source files or executables may change but the earlier layers will not change (to avoid “cache bursting”)
+	D. Use explicit file/dir paths (e.g., -v /usr/mydir:/usr/mydir) instead of using named volumes created using “docker volume create” command
+
+31- When you run this command, what will be the PID of /bin/sh?
+
+	"docker run -it alpine /bin/sh"
+
+	A. PID 1
+	B. Same as the PID of the docker process in the host
+	C. PID 0
+	D. Don’t know ;) Its randomly assigned by Docker
