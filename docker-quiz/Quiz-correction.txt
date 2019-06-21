@@ -1,0 +1,28 @@
+1- false
+2- false
+3- true
+4- ou want to publish your application to Docker Hub
+5- break the container
+6- It's a totally private repository
+7- false
+8- false
+9- The Plesk Docker extension
+10- A compatible Linux OS
+11- The server does not satisfy Docker system requirements
+12- Set up volume mapping on all containers to store their data in a single location on the server (example, /data/) and backup this location.
+16- Although ADD and COPY are functionally similar, generally speaking, COPY is preferred.
+
+That’s because it’s more transparent than ADD. COPY only supports the basic copying of local files into the container, while ADD has some features (like local-only tar extraction and remote URL support) that are not immediately obvious. Consequently, the best use for ADD is local tar file auto-extraction into the image, as in ADD rootfs.tar.xz /.
+
+17- Docker containers include the application and all of its dependencies, but share the kernel with other containers, running as isolated processes in user space on the host operating system. Docker containers are not tied to any specific infrastructure: they run on any computer, on any infrastructure, and in any cloud.
+
+18- docker ps –a
+
+19-
+
+Image: A Docker image is built up from a series of read-only layers
+Layer: Each layer represents an instruction in the image’s Dockerfile.
+
+22-An ONBUILD command executes after the current Dockerfile build completes. ONBUILD executes in any child image derived FROM the current image. Think of the ONBUILD command as an instruction the parent Dockerfile gives to the child Dockerfile.
+
+A Docker build executes ONBUILD commands before any command in a child Dockerfile.
